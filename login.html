@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fastBurger</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<script src="js/funciones.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+	<meta http-equiv="Content-Security-Policy" content="
+		default-src 'self'; 
+		script-src 'self' 'unsafe-inline'; 
+		style-src 'self' ; 
+		img-src *; 
+		font-src *;
+		connect-src *
+	">
+</head>
+<body>
+	<div id="mensaje"></div>
+	<div id="mensaje2"></div>
+	<header class="logup">	
+			<h1><i class="fa fa-car" aria-hidden="true"></i>fast<b>Burger</b></h1>	
+	</header>
+	<main class="logup1">
+		<section class="login">
+			<span class="input">
+				<input type="text" name="" placeholder="Usuario" id="usuario" autocomplete="off">			
+				<input type="password" name="" placeholder="Contraseña" id="password" autocomplete="off">
+				<a href="">¿Olvidaste tu contraseña? Haz click aquí...</a>
+			</span>
+			<span class="entrar" onclick="entrar()">
+				Entrar
+			</span>
+			<span class="registrarse" onclick="ir('signup.html')">
+				Registrarme
+			</span>
+		</section>
+	</main>
+</body>
+</html>

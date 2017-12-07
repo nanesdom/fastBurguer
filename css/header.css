@@ -1,0 +1,39 @@
+header{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	font-weight: lighter;
+	background-color: var(--color-principal);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	color: var(--color-contraste);
+	display: flex;
+	font-size: .6em;
+	z-index: 100;
+}
+
+header h1{
+	margin-left: 20px;	
+	float: left;
+}
+
+header h1 i{
+	margin-right: 5px;
+}
+
+header button{
+	width: 30px;
+	height: 30px;
+	margin: 10px;
+	background: transparent;
+	border: none;
+	outline: none;
+	font-size: 1.8em;	
+	color: var(--color-contraste);
+	float: right;
+}
+
+h1 b{
+	color: var(--color-diferente);
+}

@@ -1,0 +1,65 @@
+.elige{
+	width: 100%;
+	height: calc(100% - 50px);
+	position: absolute;
+	left: 0px;
+	top: 50px;
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+
+}
+
+.elige img{
+	height: 120px;
+	width: 120px;
+	margin: 7.5px;
+}
+
+.elige span{
+	width: 150px;
+	height: 180px;
+	background: var(--colorfondo);
+	margin: auto;
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+	-webkit-box-shadow: 2px 7px 37px 7px rgba(0,0,0,0.27);
+	-moz-box-shadow: 2px 7px 37px 7px rgba(0,0,0,0.27);
+	box-shadow: 2px 7px 37px 7px rgba(0,0,0,0.27);
+}
+
+.elige .registrarse{
+	height: 40px;
+}
+.elige .registrarse:hover{
+	font-size: 1.3em;
+}
+
+.elige span:hover{
+	transform: scale(1.1);
+}
+
+@media (min-width: 1024px){
+	body{
+		overflow: hidden;
+	}
+	.elige span{
+		width: 250px;
+		height: 280px;
+		background: var(--colorfondo);
+		margin: auto;
+		border-top-right-radius: 6px;
+		border-top-left-radius: 6px;
+		-webkit-box-shadow: 2px 7px 37px 7px rgba(0,0,0,0.27);
+		-moz-box-shadow: 2px 7px 37px 7px rgba(0,0,0,0.27);
+		box-shadow: 2px 7px 37px 7px rgba(0,0,0,0.27);
+	}
+
+	.elige img{
+		height: 240px;
+		width: 200px;
+		margin: 7.5px;
+	}
+}

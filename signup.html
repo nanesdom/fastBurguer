@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fastBurger</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<script src="js/funciones.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+	<meta http-equiv="Content-Security-Policy" content="
+		default-src 'self'; 
+		script-src 'self' 'unsafe-inline'; 
+		style-src 'self' ; 
+		img-src *; 
+		font-src *;
+		connect-src *
+	">
+</head>
+<body>
+	<div id="ventana" onclick="ir('login.html')">
+		<h3></h3>
+		<span class="registrarse">Listo</span>
+	</div>
+	<div id="mensaje"></div>
+	<div id="mensaje2"></div>
+	<header class="logup">	
+			<h1><i class="fa fa-car" aria-hidden="true"></i>fast<b>Burger</b></h1>	
+	</header>
+	<main class="logup1">
+		<section class="login1">
+			<span class="input1">
+				<input type="text" name="" placeholder="Usuario" class="signup" id="user">			
+				<input type="password" name="" placeholder="Contraseña" class="signup" id="pass">
+				<input type="password" name="" placeholder="Repetir contraseña" class="signup" id="pass2">
+				<input type="email" name="" placeholder="Correo" class="signup" id="correo">
+			</span>
+			<span class="entrar" onclick="registrarme()">
+				Registrarme
+			</span>
+			<span class="registrarse" onclick="ir('login.html')">
+				Ya tengo cuenta...
+			</span>
+		</section>
+	</main>
+</body>
+</html>

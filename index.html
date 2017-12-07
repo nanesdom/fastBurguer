@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fastBurger</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<script src="js/funciones.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+	<meta http-equiv="Content-Security-Policy" content="
+		default-src 'self'; 
+		script-src 'self' 'unsafe-inline' https://maps.googleapis.com;
+		style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; 
+		img-src *; 
+		font-src *;
+		connect-src *
+	">
+</head>
+<body onload="cargar(), variable(), carrito(), inicializar()" onbeforeunload="variable()">
+	<div id="mensaje"></div>
+	<div id="mensaje2"></div>
+	<header>	
+		<div class="contenedor">
+			<h1><i class="fa fa-car" aria-hidden="true"></i>fast<b>Burger</b></h1>
+			<input type="checkbox" name="" id="menu-bar"><label for="menu-bar"><i class="fa fa-bars" aria-hidden="true"></i></label>
+			<nav class="menu">
+				<span class="user">
+					<img src="img/user.jpg">
+					<div class="cont">
+						<h3 id="hola">Hola Usuario</h3>
+						<h4 id="tucorreo">tucorreo@correo.com</h4>						
+					</div>
+				</span>
+				<a href="index.html"><i class="fa fa-credit-card-alt" aria-hidden="true"></i>Inicio</a>				
+				<a href="carrito.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Mi carrito</a>
+				<a onclick="salir()"><i class="fa fa-sign-out" aria-hidden="true"></i>Salir</a>
+			</nav>
+		</div>				
+	</header>
+	<main>
+		<section class="mapa" id="map">			
+		</section>
+		<section class="datos">
+			<div class="direccion">
+				<h6 id="direccion1">Tu direccion</h6>				
+			</div>	
+			<div class="pedir" onclick="pedir()">
+				Pedir
+			</div>
+		</section>
+	</main>
+
+	<script>
+
+		var geocoder = null;
+      function initMap() {
+		var miLugar = {lat: latitud, lng: longitud};
+		var miMapa = new google.maps.Map(document.getElementById('map'), {
+			zoom: 18,
+			streetViewControl:false,
+			fullscreenControl:false,
+			mapTypeControl:false,
+			zoomControl:false,
+			center: miLugar
+		});
+
+		var miMarcador = new google.maps.Marker({
+			position: miLugar,
+			draggable:true,
+			animation:google.maps.Animation.DROP,
+			map: miMapa			
+		}); 
+
+		    google.maps.event.addListener(miMarcador, 'dragend', function(){
+				        
+				var geocoder = new google.maps.Geocoder;
+				var markerLatLng = miMarcador.getPosition();
+				var newLat = markerLatLng.lat();
+				var newLong = markerLatLng.lng();
+
+				codeLatLng(geocoder, newLat, newLong);
+				localStorage.setItem('lat', newLat);
+		localStorage.setItem('long', newLong);
+		    });
+
+		    				var geocoder = new google.maps.Geocoder;
+				var markerLatLng = miMarcador.getPosition();
+				var newLat = markerLatLng.lat();
+				var newLong = markerLatLng.lng();
+
+				codeLatLng(geocoder, newLat, newLong);
+
+		localStorage.setItem('lat', newLat);
+		localStorage.setItem('long', newLong);
+
+      }     
+
+      window.addEventListener('load', variable, true); 
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhhsWskzsjtklAblj59Eohj5Gju1E_g7U">
+
+    </script>
+</body>
+</html>

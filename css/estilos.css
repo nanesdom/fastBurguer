@@ -1,0 +1,136 @@
+@import url(header.css);
+@import url(menu.css);
+@import url(login.css);
+@import url(step2.css);
+@import url(combos.css);
+@import url(makeBurger.css);
+@import url(carrito.css);
+@import url(agregar.css);
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;	
+}
+
+:root{
+	--color-principal: #333;
+	--color-contraste: white;
+	--color-fondo: #efefef;
+	--color-diferente: #e74c3c;
+}
+
+body{
+	font-family: 'Rajdhani', sans-serif;
+	background: var(--color-fondo);
+	width: 100%;
+	height: 100%;
+}
+
+.contenedor{
+	width: 100%;
+	position: fixed;
+}
+
+.datos{
+	width: 70%;
+	height: 100px;
+	position: fixed;
+	bottom: 25px;
+	left: 15%;	
+	display: block;
+	z-index: 1;
+	/*border: 1px solid var(--color-principal);*/
+	border-radius: 6px;
+}
+
+.direccion{
+	border-top-right-radius: 6px; 
+	border-top-left-radius: 6px; 
+	background: var(--color-principal);
+	width: 100%;
+	height: 70%;
+	padding: 20px;
+	text-align: center;		
+	font-size: 1em;
+	color: var(--color-contraste);
+}
+.pedir{
+	border-bottom-right-radius: 6px; 
+	border-bottom-left-radius: 6px; 
+	background: var(--color-diferente);
+	width: 100%;
+	height: 30%;
+	line-height: 30px;
+	font-size: 1.5em;
+	text-align: center;
+	color: var(--color-contraste);
+}
+
+.pedir:hover{
+	font-size: 1.6em;
+	background: var(--color-principal);
+	/*background: #FB3924;*/
+}
+
+ #map {
+   width: 100%;
+   height: calc(100% - 50px);   
+   position: absolute;
+	top: 50px;
+	left: 0px;
+	z-index: 1;
+ }
+
+#mensaje, #mensaje2{
+	width: 100%;
+	height: 80px;	
+	color: white;
+	position: absolute;
+	top: -80px;
+	left: 0px;
+	line-height: 80px;
+	text-align: center;
+	font-size: .8em;
+	font-weight: bold;	
+	z-index: 999999999999999999999999999999;
+	}
+
+	#mensaje{
+		background: #e74c3c;
+	}
+
+	#mensaje2{
+		background: green;
+	}
+
+#ventana{
+	width: 80%;
+	height: 250px;	
+	color: var(--color-contraste);
+	position: absolute;
+	top: calc(50% - 125px);
+	left: -80%;
+	line-height: 250px;
+	text-align: center;
+	font-size: .8em;
+	font-weight: bold;	
+	z-index: 999999999999999999999999999999;
+	background: var(--color-principal);
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
+@media (min-width: 1024px){
+	.datos{
+		width: 40%;
+		height: 100px;
+		position: fixed;
+		bottom: 25px;
+		left: 30%;	
+		display: block;
+		z-index: 1;
+		/*border: 1px solid var(--color-principal);*/
+		border-radius: 6px;
+	}
+}

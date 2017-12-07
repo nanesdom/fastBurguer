@@ -1,0 +1,209 @@
+.make{
+	width: 100%;
+	height: calc(100% - 50px);
+	position: absolute;
+	left: 0px;
+	top: 50px;
+	margin: 0px;
+	padding: 0px;
+	display: inline-block;
+	text-align: center;
+}
+
+.make .datos{
+	background: var(--color-principal);
+	color: var(--color-contraste);
+	height: 130px;	
+	bottom: 15px;	
+}
+
+.make .datos input[type="number"]{
+	width: 25%;
+	height: 15px;
+	border: none;
+	background: transparent;
+	color: var(--color-diferente);
+	font-size: .8em;
+}
+
+.make .datos button{
+	width: 30px;
+	height: 20px;
+	background: var(--color-diferente);
+	border: none;
+	margin-left: 10px;
+	margin-top: 2.5px;
+	color: var(--color-contraste);
+	font-size: 1.2em;
+	line-height: 15px;
+	outline: none;
+}
+
+.make .datos button:hover{
+	width: 30px;
+	height: 20px;
+	font-size: 1.5em;
+	line-height: 20px;		
+}
+
+.sumar{
+	text-align: center;
+	width: 100%;	
+	height: 20px;	
+	justify-content: center;
+	margin-bottom: 10px;
+	display: flex;
+}
+
+.info .xd h3{
+	width: 80%;
+}
+
+.info .xd{
+	width: 100%;
+	height: 30px;	
+	text-align: left;
+	margin-left: 15px;		
+}
+
+.info{
+	width: 100%;
+	height: 60px;
+	text-align: center;
+	justify-content: center;
+	display: inline-flex;
+	flex-wrap: wrap;	
+}
+
+.make .datos .registrarse{
+	height: 40px !important;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+
+.make h2{
+	color: var(--color-diferente);
+	margin-top: 15px;
+}
+
+.make i{
+	font-size: .7em;
+}
+
+.vegetales{
+	width: 100%;
+	height: 110px;
+	position: fixed;
+	left: 0px;
+	top: 50px;
+	padding-left: 15px;
+	padding-right: 15px;
+	justify-content: center;		
+}
+
+.conte{
+	display: flex;	
+	flex-wrap: wrap;
+	width: 100%;
+	height: 60px;	
+	justify-content: center;
+}
+
+.make img{
+	width: 40px;
+	height: 40px;
+	margin-left: 5px;		
+}
+
+.make h4{
+	width: 40px;
+	font-size: .8em;	
+	font-weight: lighter;
+	margin: 5px;
+}
+
+.ingrediente{
+	width: 50px;
+	height: 50px;
+	margin: 7px;	
+	border-radius: 50%;
+	outline: none;
+	border: none;
+	display: flex;
+	flex-wrap: wrap;	
+	background: transparent;
+}
+
+
+.ingredientes{
+	width: 100%;
+	height: calc(100% - 260px);	
+	position: absolute;
+	left: 0px;
+	top: 110px;
+	padding-left: 15px;
+	padding-right: 15px;
+	justify-content: center;
+	overflow: auto;
+}
+
+.ingredientes label{
+	background: yellow;
+	width: 50px;
+	height: 50px;
+}
+
+.check{
+	
+}
+
+.extra{
+	width: 100%;
+	height: 150px;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;	
+}
+
+@media (min-width: 1024px){
+	.ingrediente{
+		width: 100px;
+		height: 100px;
+		margin: 7px;	
+		border-radius: 50%;
+		outline: none;
+		border: none;
+		display: flex;
+		flex-wrap: wrap;	
+		background: transparent;
+	}
+
+	.make img{
+		width: 90px;
+		height: 90px;
+		margin-left: 5px;		
+	}
+
+	.vegetales{
+		width: 100%;
+		height: 180px;
+		position: fixed;
+		left: 0px;
+		top: 50px;
+		padding-left: 15px;
+		padding-right: 15px;
+		justify-content: center;		
+	}
+	.ingredientes{
+		width: 100%;
+		height: calc(100% - 230px);	
+		position: absolute;
+		left: 0px;
+		top: 180px;
+		padding-left: 15px;
+		padding-right: 15px;
+		justify-content: center;
+		overflow: auto;
+	}
+}

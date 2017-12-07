@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fastBurger</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<script src="js/funciones.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+	<meta http-equiv="Content-Security-Policy" content="
+		default-src 'self'; 
+		script-src 'self' 'unsafe-inline'; 
+		style-src 'self' ; 
+		img-src *; 
+		font-src *;
+		connect-src *
+	">
+</head>
+<body onbeforeunload="variable()" onload="cargar(), variable(), cargarIngredientes()">
+	<div id="ventana" onclick="ir('makeBurger.html')">
+		<h3></h3>
+		<span class="registrarse">Listo</span>
+	</div>
+	<div id="mensaje"></div>
+	<div id="mensaje2"></div>
+	<header>	
+		<div class="contenedor">
+			<h1><i class="fa fa-angle-left" aria-hidden="true" onclick="ir('step2.html')"></i><i class="fa fa-car" aria-hidden="true"></i>fast<b>Burger</b></h1>
+			<input type="checkbox" name="" id="menu-bar"><label for="menu-bar"><i class="fa fa-bars" aria-hidden="true"></i></label>
+			<nav class="menu">
+				<span class="user">
+					<img src="img/user.jpg">
+					<div class="cont">
+						<h3 id="hola">Hola Usuario</h3>
+						<h4 id="tucorreo">tucorreo@correo.com</h4>						
+					</div>
+				</span>
+				<a href="index.html"><i class="fa fa-credit-card-alt" aria-hidden="true"></i>Inicio</a>				
+				<a href="carrito.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Mi carrito</a>
+				<a onclick="salir()"><i class="fa fa-sign-out" aria-hidden="true"></i>Salir</a>
+			</nav>
+		</div>				
+	</header>
+	<main>
+		<section class="make">		
+			<span class="datos">
+				<div class="info">
+					<div class="xd"><h3>Ingredientes: <input type="number" name="" value="0" disabled="" id="m1" min="0"></h3></div>
+					<div class="xd"><h3>Cantidad: <input type="number" name="" value="1" disabled="" id="m2" min="0"></h3></div>
+					<div class="registrarse" onclick="agregarHambur()">Agregar al Carrito</div>
+				</div>
+				<div class="sumar">
+					<button id="sum" onclick="sumar('m2')">+</button>
+					<button id="rest" onclick="restar('m2')">-</button>
+					<h1>Precio: $ <input type="number" name="" value="0" id="precio" min="0" disabled=""></h1>
+				</div>
+			</span>
+			<span class="vegetales">
+				<h2>Selecciona los Vegetales</h2>
+				<div class="conte">
+				 	<div class="ingrediente" onclick="agregarVe('ve1', 'veg1')" id="veg1"><input type="checkbox" name="Lechuga" id="ve1" class="check"><label ><img src="img/vegetales/lechuga.png"><h4>Lechuga</h4></label></div>
+				 	<div class="ingrediente" onclick="agregarVe('ve2', 'veg2')" id="veg2"><input type="checkbox" name="Jitomate" id="ve2" class="check"><label ><img src="img/vegetales/jitomate.png"><h4>Jitomate</h4></label></div>
+				 	<div class="ingrediente" onclick="agregarVe('ve3', 'veg3')" id="veg3"><input type="checkbox" name="Pepino" id="ve3" class="check"><label ><img src="img/vegetales/pepino.png"><h4>Pepino</h4></label></div>
+				 	<div class="ingrediente" onclick="agregarVe('ve4', 'veg4')" id="veg4"><input type="checkbox" name="Cebolla" id="ve4" class="check"><label ><img src="img/vegetales/cebolla.png"><h4>Cebolla</h4></label></div>				 		 
+				 </div>
+			</span>
+			<span class="ingredientes">
+				<h2>Selecciona los Ingredientes</h2>
+				<div class="conte" id="ingres">
+				 				 				
+				 </div>
+			</span>
+		</section>
+	</main>
+</body>
+</html>
