@@ -56,7 +56,7 @@
     <plugin name="cordova-plugin-vibration" />
 
 	<plugin name="cordova-plugin-googlemaps" spec="2.0.0">
-	    <variable name="AIzaSyDhhsWskzsjtklAblj59Eohj5Gju1E_g7U" value="AIzaSyALewW9b3zU-Skh6ENpXOxXgP4FzVLthcg" />
+	    <variable name="AIzaSyALewW9b3zU-Skh6ENpXOxXgP4FzVLthcg" value="AIzaSyALewW9b3zU-Skh6ENpXOxXgP4FzVLthcg" />
 	</plugin>
 
 
