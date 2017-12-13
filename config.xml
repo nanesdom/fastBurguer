@@ -60,7 +60,7 @@
 	</plugin> -->
 
 	<plugin name="cordova-plugin-googlemaps" spec="2.0.0">
-	    <variable name="API_KEY_FOR_ANDROID" value="AIzaSyDhhsWskzsjtklAblj59Eohj5Gju1E_g7U" />
+	    <variable name="API_KEY_FOR_ANDROID" value="AIzaSyCJv0Q3pR353uPmPu3pZIojQtKdi4_XnV8" />
 	   <!--  <variable name="LOCATION_WHEN_IN_USE_DESCRIPTION" value="My custom when in use message" />
 	    <variable name="LOCATION_ALWAYS_USAGE_DESCRIPTION" value="My custom always usage message" /> -->
 	</plugin>
