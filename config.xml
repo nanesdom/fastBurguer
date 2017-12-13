@@ -26,7 +26,7 @@
     <!-- Customize your app and platform with the preference element. -->
     <preference name="orientation"                value="portrait" />        <!-- all: default means both landscape and portrait are enabled -->
     <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
-    <preference name="fullscreen"                 value="false" />           <!-- all: hides the status bar at the top of the screen -->    
+    <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->    
     <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
     <!--
         Define a specific version of PhoneGap to build into your app.
@@ -56,7 +56,7 @@
     <plugin name="cordova-plugin-vibration" />
 
 	<plugin name="cordova-plugin-googlemaps" spec="2.0.0">
-	    <variable name="AIzaSyALewW9b3zU-Skh6ENpXOxXgP4FzVLthcg" value="AIzaSyALewW9b3zU-Skh6ENpXOxXgP4FzVLthcg" />
+	    <variable name="API key " value="AIzaSyALewW9b3zU-Skh6ENpXOxXgP4FzVLthcg" />
 	</plugin>
 
 
