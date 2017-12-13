@@ -13,7 +13,7 @@ function variable(){
 	Sesion = localStorage.getItem('user');
 
 	variableAjax = new XMLHttpRequest();
-	variableAjax.open('POST', 'https://148.220.208.123:9999/fastburguer/php/sesion.php');
+	variableAjax.open('POST', 'http://148.220.208.123:9999/fastburguer/php/sesion.php');
 
 	variableAjax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
@@ -38,7 +38,7 @@ function variable2(){
 	Sesion = localStorage.getItem('user');
 
 	variable2Ajax = new XMLHttpRequest();
-	variable2Ajax.open('POST', 'https://148.220.208.123:9999/fastburguer/php/sesion2.php');
+	variable2Ajax.open('POST', 'http://148.220.208.123:9999/fastburguer/php/sesion2.php');
 
 	variable2Ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
@@ -63,7 +63,7 @@ function carrito(){
 	user = localStorage.getItem('id');
 
 	carritoAjax = new XMLHttpRequest();
-	carritoAjax.open('POST', 'https://148.220.208.123:9999/fastburguer/php/carrito.php');
+	carritoAjax.open('POST', 'http://148.220.208.123:9999/fastburguer/php/carrito.php');
 
 	carritoAjax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
@@ -142,7 +142,7 @@ function entrar(){
 	if (!desconectadoInternet) {
 		if(usuarioColocado && passwordColocado){
 			loginAjax = new XMLHttpRequest();
-			loginAjax.open('POST', 'https://148.220.208.123:9999/fastburguer/php/login.php');
+			loginAjax.open('POST', 'http://148.220.208.123:9999/fastburguer/php/login.php');
 
 			loginAjax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
@@ -248,7 +248,7 @@ function salir(){
 	Sesion = localStorage.getItem('user');
 
 	variableAjax = new XMLHttpRequest();
-	variableAjax.open('POST', 'https://148.220.208.123:9999/fastburguer/php/salir.php');
+	variableAjax.open('POST', 'http://148.220.208.123:9999/fastburguer/php/salir.php');
 
 	variableAjax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
@@ -349,7 +349,7 @@ function registrarme(){
 	if (!desconectadoInternet) {
 		if(userColocado && passColocado && pass2Colocado && correoColocado){
 			registroAjax = new XMLHttpRequest();
-			registroAjax.open('POST', 'https://148.220.208.123:9999/fastburguer/php/registro.php');
+			registroAjax.open('POST', 'http://148.220.208.123:9999/fastburguer/php/registro.php');
 
 			registroAjax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
@@ -476,7 +476,7 @@ function pedir(){
 	idCarrito = localStorage.getItem('idCarrito');
 
 	lugarAjax = new XMLHttpRequest();
-	lugarAjax.open('POST', 'https://148.220.208.123:9999/fastburguer/php/lugar.php');
+	lugarAjax.open('POST', 'http://148.220.208.123:9999/fastburguer/php/lugar.php');
 
 	lugarAjax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
@@ -622,7 +622,7 @@ function agregar(){
 			formData.append('descripcion', descripcion);
 
 			agregar = new XMLHttpRequest();
-			agregar.open('POST', 'https://148.220.208.123:9999/fastburguer/php/agregarEspecialidad.php');
+			agregar.open('POST', 'http://148.220.208.123:9999/fastburguer/php/agregarEspecialidad.php');
 
 			
 
@@ -673,7 +673,7 @@ function agregar2(){
 			formData.append('descripcion', descripcion);		
 
 			agregar = new XMLHttpRequest();
-			agregar.open('POST', 'https://148.220.208.123:9999/fastburguer/php/agregarCombo.php');
+			agregar.open('POST', 'http://148.220.208.123:9999/fastburguer/php/agregarCombo.php');
 
 			
 
@@ -717,7 +717,7 @@ function agregar3(){
 
 
 			agregar = new XMLHttpRequest();
-			agregar.open('POST', 'https://148.220.208.123:9999/fastburguer/php/agregarIngrediente.php');
+			agregar.open('POST', 'http://148.220.208.123:9999/fastburguer/php/agregarIngrediente.php');
 
 			
 
@@ -748,7 +748,7 @@ function cargarCombos(){
 	flag= true;
 	cargarCombosAjax = new XMLHttpRequest();
 
-			cargarCombosAjax.open('POST', 'https://148.220.208.123:9999/fastburguer/php/combos.php');
+			cargarCombosAjax.open('POST', 'http://148.220.208.123:9999/fastburguer/php/combos.php');
 
 			cargarCombosAjax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
@@ -797,7 +797,7 @@ function cargarEspecialidades(){
 	flag= true;
 	cargarEspecialidadesAjax = new XMLHttpRequest();
 
-			cargarEspecialidadesAjax.open('POST', 'https://148.220.208.123:9999/fastburguer/php/especialidades.php');
+			cargarEspecialidadesAjax.open('POST', 'http://148.220.208.123:9999/fastburguer/php/especialidades.php');
 
 			cargarEspecialidadesAjax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
@@ -850,7 +850,7 @@ function comprarEspecialidad(id, nombre, cantidad, precio, descripcion){
 		verMensaje('No se pueden comprar 0');
 	}else{		
 		comprarEspecialidadAjax = new XMLHttpRequest();
-		comprarEspecialidadAjax.open('POST', 'https://148.220.208.123:9999/fastburguer/php/comprarEspecialidad.php');
+		comprarEspecialidadAjax.open('POST', 'http://148.220.208.123:9999/fastburguer/php/comprarEspecialidad.php');
 
 		comprarEspecialidadAjax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
@@ -879,7 +879,7 @@ function comprarCombo(id, nombre, cantidad, precio, descripcion){
 		verMensaje('No se pueden comprar 0');
 	}else{		
 		comprarComboAjax = new XMLHttpRequest();
-		comprarComboAjax.open('POST', 'https://148.220.208.123:9999/fastburguer/php/compraCombo.php');
+		comprarComboAjax.open('POST', 'http://148.220.208.123:9999/fastburguer/php/compraCombo.php');
 
 		comprarComboAjax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
@@ -904,7 +904,7 @@ function cargarIngredientes(){
 	flag= true;
 	cargarIngredientesAjax = new XMLHttpRequest();
 
-			cargarIngredientesAjax.open('POST', 'https://148.220.208.123:9999/fastburguer/php/ingredientes.php');
+			cargarIngredientesAjax.open('POST', 'http://148.220.208.123:9999/fastburguer/php/ingredientes.php');
 
 			cargarIngredientesAjax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
@@ -944,7 +944,7 @@ function agregarHambur(){
 		verMensaje('No hay nada...');
 	}else{		
 		comprarHambur = new XMLHttpRequest();
-		comprarHambur.open('POST', 'https://148.220.208.123:9999/fastburguer/php/comprarHambur.php');
+		comprarHambur.open('POST', 'http://148.220.208.123:9999/fastburguer/php/comprarHambur.php');
 
 		comprarHambur.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
@@ -977,7 +977,7 @@ function cargarCarrito(){
 	idCarrito = localStorage.getItem('idCarrito');
 	cargarEspe = new XMLHttpRequest();
 
-	cargarEspe.open('POST', 'https://148.220.208.123:9999/fastburguer/php/cargarEspe.php');
+	cargarEspe.open('POST', 'http://148.220.208.123:9999/fastburguer/php/cargarEspe.php');
 
 	cargarEspe.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
@@ -1013,7 +1013,7 @@ function cargarCarrito(){
 
 	cargarComboAjax = new XMLHttpRequest();
 
-	cargarComboAjax.open('POST', 'https://148.220.208.123:9999/fastburguer/php/cargarCombo.php');
+	cargarComboAjax.open('POST', 'http://148.220.208.123:9999/fastburguer/php/cargarCombo.php');
 
 	cargarComboAjax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
@@ -1047,7 +1047,7 @@ function cargarCarrito(){
 
 	cargarHamburguesa = new XMLHttpRequest();
 
-	cargarHamburguesa.open('POST', 'https://148.220.208.123:9999/fastburguer/php/cargarHamburguesa.php');
+	cargarHamburguesa.open('POST', 'http://148.220.208.123:9999/fastburguer/php/cargarHamburguesa.php');
 
 	cargarHamburguesa.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
@@ -1080,7 +1080,7 @@ function cargarCarrito(){
 	}	
 
 	miCarrito = new XMLHttpRequest();
-			miCarrito.open('POST', 'https://148.220.208.123:9999/fastburguer/php/miCarrito.php');
+			miCarrito.open('POST', 'http://148.220.208.123:9999/fastburguer/php/miCarrito.php');
 
 			miCarrito.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
@@ -1104,7 +1104,7 @@ function comprar(){
 	idCarrito = localStorage.getItem('idCarrito');
 	direccion = localStorage.getItem('direccion');
 	comprarAjax = new XMLHttpRequest();
-	comprarAjax.open('POST', 'https://148.220.208.123:9999/fastburguer/php/comprarAjax.php');
+	comprarAjax.open('POST', 'http://148.220.208.123:9999/fastburguer/php/comprarAjax.php');
 
 			comprarAjax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
@@ -1136,7 +1136,7 @@ function comprar(){
 function ventas(){
 	idCarrito = localStorage.getItem('idCarrito');
 	ventasAjax = new XMLHttpRequest();
-	ventasAjax.open('POST', 'https://148.220.208.123:9999/fastburguer/php/ventas.php');
+	ventasAjax.open('POST', 'http://148.220.208.123:9999/fastburguer/php/ventas.php');
 
 			ventasAjax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 			ventasAjax.send('idCarrito=' + idCarrito);			
