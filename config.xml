@@ -55,9 +55,16 @@
     <!-- <plugin name="cordova-plugin-splashscreen" /> -->
     <plugin name="cordova-plugin-vibration" />
 
-	<plugin name="cordova-plugin-googlemaps" spec="2.0.0">
+	<!-- <plugin name="cordova-plugin-googlemaps" spec="2.0.0">
 	    <variable name="API key " value="AIzaSyALewW9b3zU-Skh6ENpXOxXgP4FzVLthcg" />
+	</plugin> -->
+
+	<plugin name="cordova-plugin-googlemaps" spec="2.0.0">
+	    <variable name="API_KEY_FOR_ANDROID" value="AIzaSyALewW9b3zU-Skh6ENpXOxXgP4FzVLthcg" />
+	   <!--  <variable name="LOCATION_WHEN_IN_USE_DESCRIPTION" value="My custom when in use message" />
+	    <variable name="LOCATION_ALWAYS_USAGE_DESCRIPTION" value="My custom always usage message" /> -->
 	</plugin>
+
 
 
     <!-- Third party plugins -->
